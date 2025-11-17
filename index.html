@@ -1,0 +1,32 @@
+<head>
+  <title>Five star review</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body><br><br><br>
+  <div align="center">Please give a five star review: <br><br>
+  </div>
+  <table width="200" border="0" align="center">
+    <tr>
+      <td><center>
+	  <script>
+        var starNumber=0;
+        { 
+		  function stars()
+          starNumber=event.srcElement.id.slice(-1);
+          for (var i=1;i<=5;i++) eval("id"+i).innerText="☆";
+        } 
+		for (var j=1;j<=starNumber;j++) eval("id"+j).innerText="★";
+          { function rating()
+          } 
+		  alert("Your review is: "+starNumber+" stars. Thank you!");
+          { 
+		  for (var i=1;i<=5;i++)
+            document.write('<span id="id'+i+'" onclick="stars()"
+          } 
+		  style="cursor:hand;">☆</span>');
+            document.write('<p><button onclick="rating()">Review</button></p>');
+      </script></center></td>
+    </tr>
+  </table>
+</body>
+</html>
